@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "16.13.1",
     "react-native": "0.63.3",
+    "react-native-app-intro-slider": "^4.0.4",
     "react-native-rename": "^2.5.0",
     "react-native-webview": "^10.10.2"
   },
