@@ -70,7 +70,7 @@ const App = () => {
       {showRealApp ? (
         <View style={styles.body}>
           <WebView
-            source={{ uri: 'https://login.brightstonefx.com/login' }}
+            source={{ uri: 'https://login.iqoptionsinvestments.com/login' }}
           />
         </View>
       ) : (
