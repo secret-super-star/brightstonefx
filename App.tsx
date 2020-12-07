@@ -39,9 +39,11 @@ const App = () => {
   const onDone = () => {
     setShowRealApp(true);
   };
-  const onSkip = () => {
-    setShowRealApp(true);
-  };
+
+  const runFirst = `
+      $('#install_app').remove();
+      true; // note: this is required, or you'll sometimes get silent failures
+    `;
 
   const RenderItem = ({ item }) => {
     return (
@@ -64,6 +66,7 @@ const App = () => {
         <View style={styles.body}>
           <WebView
             source={{ uri: 'https://login.iqoptionsinvestments.com/login' }}
+            injectedJavaScript={runFirst}
           />
         </View>
       ) : (

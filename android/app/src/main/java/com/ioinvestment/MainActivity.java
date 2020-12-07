@@ -1,4 +1,4 @@
-package com.awesometsproject;
+package com.ioinvestment;
 
 import com.facebook.react.ReactActivity;
 
